@@ -1,0 +1,62 @@
+/* Task 1  */
+@media print {
+    .assign-one {
+        font-size: 40px;
+    }
+}
+
+/* ****************************** */
+
+/*  Q2 */
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.parent div {
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* /-10px/ Small devices (landscape phones, 576px and up) */
+@media (min-width:567px) {
+    .parent div {
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid lightgray;
+
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991px) {
+
+    .parent div {
+        width: calc(50% - 20px);
+        margin-bottom: 15px;
+        border: 1px solid lightgray;
+    }
+
+    .parent div h2 {
+        color: red;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .parent div {
+        width: calc(100% / 4 - 10px);
+        border: 1px solid lightgray;
+    }
+
+    .parent div h2 {
+        color: darkcyan;
+    }
+
+}
